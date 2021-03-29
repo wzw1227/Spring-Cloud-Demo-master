@@ -1,18 +1,18 @@
+spring:
+  profiles:
+    active:
+      - dev
+---
 server:
-  port: 1299
-eureka:
-  client:
-    service-url:
-      defaultZone: http://127.0.0.1:7001/eureka
-  instance:
-    prefer-ip-address: true
+  port: 3355
 spring:
   application:
-    name: CONFIG-SERVER
-  cloud:
-    config:
-      server:
-        git:
-          uri: https://github.com/wzw1227/Spring-Cloud-Demo-master.git    #git文件地址
-          username: 1138114321@qq.com         #GitHub账号
-          password: Wzw951227         #GitHub密码
+    name: MICRO-SERVER-DEV
+  profiles: dev #开发环境
+---
+server:
+  port: 3356
+spring:
+  application:
+    name: MICRO-SERVER-TEST
+  profiles: test #测试环境
