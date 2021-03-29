@@ -13,6 +13,6 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/wl1006/test.git    #git文件地址
-          username: xxxxxxx         #GitHub账号
-          password: xxxxxxx         #GitHub密码
+          uri: https://github.com/wzw1227/Spring-Cloud-Demo-master.git    #git文件地址
+          username: 1138114321@qq.com         #GitHub账号
+          password: Wzw951227         #GitHub密码
